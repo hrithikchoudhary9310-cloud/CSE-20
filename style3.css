@@ -1,0 +1,51 @@
+/* Basic reset for better viewing */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* The main box that illustrates the box model */
+.box-model-example {
+    /* 1. CONTENT: The actual content area */
+    width: 250px;
+    height: 150px;
+    background-color: #a3e4d7; /* Light cyan for content area */
+    
+    /* Center the text within the content area */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #0e6655;
+    
+    /* 2. PADDING: Space between the content and the border */
+    padding: 30px; 
+    
+    /* 3. BORDER: A line around the padding and content */
+    border: 10px solid #2e86c1; /* Blue border */
+    
+    /* 4. MARGIN: Space outside the border, separating it from other elements */
+    margin: 50px;
+    
+    /* Optional: To make the box more visually distinct */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.box-model-example p {
+    margin: 5px 0; /* Adjust internal paragraph spacing */
+    font-size: 0.9em;
+}
+
+/* Add a visual cue to the margin space by styling the body's background */
+/* The margin will push the box 50px away from the body's edge */
+body {
+    /* This color helps visualize the margin area (space outside the border) */
+    border: 5px dashed #e74c3c;
+    padding: 20px;
+}
