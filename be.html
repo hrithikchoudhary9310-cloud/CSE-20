@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Krish Garg | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 3rem auto;
+            background: rgba(255,255,255,0.85);
+            border-radius: 25px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+            padding: 2.5rem 2rem;
+            position: relative;
+        }
+        .glow {
+            text-align: center;
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: #2d6a4f;
+            text-shadow: 0 0 15px #66a6ff, 0 0 5px #fff;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+        .details {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+        .passion {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .passion-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #66a6ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px #66a6ff;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 10px #66a6ff; }
+            50% { box-shadow: 0 0 30px #66a6ff; }
+            100% { box-shadow: 0 0 10px #66a6ff; }
+        }
+        .passion-text {
+            font-size: 1.2rem;
+            color: #2d6a4f;
+            font-weight: 500;
+        }
+        .effect-bg {
+            position: absolute;
+            top: -60px;
+            left: -60px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, #66a6ff 60%, transparent 100%);
+            opacity: 0.4;
+            z-index: 0;
+            animation: float 6s infinite alternate;
+        }
+        .effect-bg2 {
+            position: absolute;
+            bottom: -60px;
+            right: -60px;
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(circle, #89f7fe 60%, transparent 100%);
+            opacity: 0.4;
+            z-index: 0;
+            animation: float2 7s infinite alternate;
+        }
+        @keyframes float {
+            0% { transform: translateY(0) scale(1); }
+            100% { transform: translateY(30px) scale(1.1); }
+        }
+        @keyframes float2 {
+            0% { transform: translateY(0) scale(1); }
+            100% { transform: translateY(-30px) scale(1.1); }
+        }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="effect-bg"></div>
+        <div class="effect-bg2"></div>
+        <div class="glow">Krish Garg</div>
+        <div class="details">
+            <span><strong>Branch:</strong> CSE 20</span><br>
+            <span><strong>Passion:</strong> Singing</span>
+        </div>
+        <div class="passion">
+            <div class="passion-icon">
+                <!-- Simple music note SVG icon -->
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="#fff">
+                    <path d="M9 17V5l12-2v12"/>
+                    <circle cx="6" cy="17" r="3"/>
+                    <circle cx="18" cy="17" r="3"/>
+                </svg>
+            </div>
+            <div class="passion-text">I love singing and music!</div>
+        </div>
+        <div class="footer">
+            &copy; 2025 Krish Garg | All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
